@@ -1,0 +1,16 @@
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+    text-align: center;
+}
+
+tr, td {
+    border: 1px purple solid;    
+}
+
+th {
+    border: 1px purple solid;
+    color: teal;
+}
