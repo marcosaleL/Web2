@@ -1,0 +1,25 @@
+<!--	Escribir un programa que mediante un formulario html un usuario pueda ingresar 
+su nombre, apellido y edad para que sean enviados al servidor. El programa, debe recibir
+ los datos y mostrar la información por pantalla. -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Ejercicio 3</title>
+ </head>
+ <body>
+     <h4>Formulario con Metodo "POST"</h4>
+     <form action="ejercicio3.php" method="POST">
+         <label for="nombre">Nombre:</label>
+         <input placeholder="Nombre" name="nombre" type="text" value="">
+         <label for="apellido">Apellido:</label>
+         <input placeholder="Apellido" name="apellido" type="text" value="">
+         <label for="edad">Edad:</label>
+         <input placeholder="Edad" name="edad" type="number" value="">
+         <!--Boton de enviar-->
+         <button type="submit">Enviar</button>
+     </form>
+ </body>
+ </html>
