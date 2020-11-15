@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+</head>
+
+<body>
+
+    <h1>Peliculas por género</h1>
+
+    <p>Verificador de Género</p>
+    <form action="peliculas.php?buscador">
+        <label for="buscador">Buscador: </label>
+        <input type="text" name="buscador">
+        <input type="submit" value="Buscar">
+    </form>
+
+    <ul>
+        <li><a href="peliculas.php?genre=Comedy">Comedias</a></li>
+        <li><a href="peliculas.php?genre=Drama">Drama</a></li>
+        <li><a href="peliculas.php?genre=Romance">Románticas</a></li>
+        <li><a href="peliculas.php?genre=Animation">Animación</a></li>
+        <li><a href="peliculas.php?genre=Action">Acción</a></li>
+        <li><a href="peliculas.php?studio=Disney">Disney</a></li>
+    </ul>
+
+    <form action="peliculas.php?movie" method="GET">
+        <label for="search">Buscar pelicula:</label><input type="text" name="movie">
+        <input type="submit" value="Buscar">
+    </form>
+
+    <a href="peliculas.php">Ver todas</a>
+
+    <form action="peliculas.php?agregar" method="POST">
+        <label for="title">Titulo: </label>
+        <input type="text" name="title">
+        <label for="genre">Género: </label>
+        <input type="text" name="genero">
+        <label for="audience_score">Puntaje IMDB: </label>
+        <input type="text" name="audience_score">
+        <label for="year">Año: </label>
+        <input type="number" name="year">
+        <label for="studio">Estudio: </label>
+        <input type="text" name="studio">
+        <label for="profitability">Rentabilidad: </label>
+        <input type="number" name="profitability">
+        <input type="submit" value="Agregar">
+    </form>
+
+
+</body>
+
+</html>
