@@ -1,0 +1,30 @@
+Los servicios web que me parecerian interesanten:
+
+El primero con seria GET API/mascotas/:id_mascota y podria servir
+para poder mostrar en diferentes paginas las mascotas perdidas, encontradas 
+o en adopcion.
+
+El segundo con un DELETE API/encontrada/:id_mascota o API/adoptada/:id_mascota podria
+servir para que la gente comunique al sistema si vio o quiere adoptar algunas de las 
+mascotas y asi borrar la mascota de la tabla.
+----------------------------------------------------------------------------------------------
+En este sistema podría ser útil el uso de REST.
+Por ejemplo, se podría acceder a cualquier atributo del recurso mascota mediante el método get.
+También se podría agregar una ciudad mediante el método post.
+------------------------------------------------------------------------------------------------
+Un servicio sería el de mostrar una lista con las mascotas perdidas en las ciudades
+GET/API/mascotas/perdidas
+
+Otro seria el de borrar de la lista mascotas perdidas a la mascota que es encontrada 
+DELETE/API/mascotas/perdidas/:ID
+
+Tambien podría mostrar una lista de las veterinarias que hay en cada ciudad con sus horarios de atención.
+GET/API/mascotas/veterinarias
+
+
+----------------------------------------------------------------------------------------------------------------
+
+Puede ser útil que se comunique con un sistema mayor y muestra laocupación de camas tiene un o los centros,
+ o cuales son ciudades de riesgo
+http://ministerioSalud.com/api/ciudadRiesgo
+http://ministerioSalud.com/centro/canidadDecamas

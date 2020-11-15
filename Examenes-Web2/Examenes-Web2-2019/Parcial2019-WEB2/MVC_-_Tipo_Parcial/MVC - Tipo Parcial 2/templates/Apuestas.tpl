@@ -1,0 +1,19 @@
+{$titulo}
+<table>
+        <thead>
+            <tr>
+                <th>Apuesta</th>
+                <th>Monto</th>
+                <th>Fecha</th>
+            </tr>
+        <thead>
+        <tbody>
+            {foreach from=$apuestas item=$apuesta}
+                <tr>
+                    <td>{$apuesta->nombre}</td>
+                    <td>{$apuesta->monto}</td>
+                    <td>{$apuesta->fecha}</td>
+                <tr>
+            {/foreach}
+        </tbody>    
+</table>

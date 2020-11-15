@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <title>Ej. 8</title>
+    <script src="js.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a id="numeroPi" href="pi.php">Numero PI</a></li>
+                <li><a id="about" href="about.php">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Lo saco del form porque lo estoy llamando en el fetch del js  -->
+    <!-- method="POST" action="8.php" -->
+    <h2>Calculadora</h2>
+    <form id="formularioCalculadora">
+
+        <label for="dinero"></label>
+        <input type="number" name="primerNumero" placeholder="Primer valor">
+
+        <input type="number" name="segundoNumero" placeholder="Segundo valor">
+
+        <select name="operacion" id="op">
+            <option value="suma"selected>Sumar</option> 
+            <option value="resta">Restar</option>
+            <option value="multi">Multiplicar</option>
+            <option value="divi">Dividir</option>
+        </select>
+
+        <input type="submit" value="Calcular">
+        <span id="resultado"></span>
+    </form>
+
+
+
+</body>
+
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ej. 9</title>
+</head>
+
+<body>
+
+    <form id="formulario" action="9.php" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre">
+        <input type="text" name="apellido" placeholder="apellido">
+        <input type="number" name="edad" placeholder="Edad">
+        <br>
+
+        <Input type='Radio' Name='genero' value='masculino'>Masculino
+        <Input type='Radio' Name='genero' value='femenino'>Femenino
+
+        <br>
+
+        <select name="pais" id="pais">
+            <option value="argentina"selected>Argentina</option> 
+            <option value="chile">Chile</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="brasil">Brasil</option>
+        </select>
+
+        <br> Intereses:
+        <br>
+        <!-- Hacemos un array de intereses -->
+        <label><input type="checkbox" name="interes[]" value="Programacion"> Programacion</label><br>
+        <label><input type="checkbox" name="interes[]" value="Deportes"> Deportes</label><br>
+        <label> <input type="checkbox" name="interes[]" value="Videojuegos"> Videojuegos</label><br>
+
+        <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<!-- <script src="9.js"></script> -->
+
+</html>
